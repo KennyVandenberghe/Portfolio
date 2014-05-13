@@ -1,0 +1,17 @@
+body {
+	margin:0;
+	padding:0;
+	.header{
+		width: 100%;
+		height: 200px;
+		background-image: url(/meteorjsimage.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.headerTitle{
+		text-align: center;
+		color: #ffffff;
+		background-color: #000000;
+	}
+}

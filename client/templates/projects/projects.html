@@ -1,0 +1,16 @@
+<template name="projects">
+	<table>
+		{{#each projects}}
+		<tr>
+			<div class="container alternate">
+				<td><p><a href="/projects/{{this._id}}" class="title">{{this.title}}</a></p>
+				<p>{{this.summary}}</p>
+				</td>
+			</div>
+		</tr>
+		{{/each}}
+	</table>
+	<div class="centerButton">
+ 		<a href="/projects/add" class="button">New project</a>
+	</div>
+</template>

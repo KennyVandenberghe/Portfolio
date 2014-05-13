@@ -1,0 +1,50 @@
+<template name="projectPage">
+<table>
+  <tr>
+    <td>
+	   <div class="container">
+	     <p>{{this.summary}}</p>
+	     <hr>
+	   </div>
+    </td>
+  </tr>
+</table>  
+<table>
+	{{#each posts}}
+  <tr>
+		<div class="container alternate">
+  		<td>
+        <p class="title">{{this.title}}</p>
+  		  <p>{{this.content}}</p>
+      </td>
+	 </div>
+  </tr>
+	{{/each}}
+</table>
+{{#if new_project}}
+<form>
+	<div class="row">
+    <div class="large-4 columns">
+      <label>Titel
+        <input class="postTitle" type="text" placeholder="Titel" />
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Inhoud
+        <textarea class="postContent" placeholder="Inhoud"></textarea>
+      </label>
+    </div>
+  </div>
+</form>
+<div class="centerButton">
+  <a href="#" class="insertPost button">Post</a>
+</div>
+{{/if}}
+{{#unless new_project}}
+<div class="centerButton">
+ 	<a href="#" class="newPost button" id="add-post">New post</a>
+ </div>
+ {{/unless}}
+</template>

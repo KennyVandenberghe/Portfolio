@@ -1,0 +1,121 @@
+/* line 1, ../../.sass/components/_PWHeader.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* line 4, ../../.sass/components/_PWHeader.scss */
+body .header {
+  width: 100%;
+  height: 200px;
+  background-image: url(/meteorjsimage.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 12, ../../.sass/components/_PWHeader.scss */
+body .headerTitle {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* line 1, ../../.sass/components/_PWContainer.scss */
+.container {
+  margin-top: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 8, ../../.sass/components/_PWContainer.scss */
+.school-container {
+  float: right;
+}
+
+@media (max-width: 1000px) {
+  /* line 27, ../../.sass/components/_PWContainer.scss */
+  .school-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 33, ../../.sass/components/_PWContainer.scss */
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 38, ../../.sass/components/_PWContainer.scss */
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 43, ../../.sass/components/_PWContainer.scss */
+  .container {
+    width: 1170px;
+  }
+}
+/* line 47, ../../.sass/components/_PWContainer.scss */
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 54, ../../.sass/components/_PWContainer.scss */
+.container-over-mij {
+  margin-top: 20px;
+}
+
+/* line 62, ../../.sass/components/_PWContainer.scss */
+.foto-container {
+  text-align: center;
+}
+
+/* line 65, ../../.sass/components/_PWContainer.scss */
+.foto {
+  border-radius: 5px;
+  width: 170px;
+  height: 170px;
+}
+
+/* line 1, ../../.sass/components/_PWMenu.scss */
+.menu {
+  text-align: center;
+}
+
+/* line 1, ../../.sass/components/_PWButtons.scss */
+.centerButton {
+  text-align: center;
+}
+
+/* line 1, ../../.sass/components/_PWTitles.scss */
+.title {
+  font-size: 25px;
+}
+
+/* line 1, ../../.sass/components/_PWLines.scss */
+.line {
+  border-top: dotted 2px;
+}
+
+/* line 1, ../../.sass/components/_PWAlternate.scss */
+.alternate {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* line 5, ../../.sass/components/_PWAlternate.scss */
+table {
+  border: none;
+  width: 100%;
+}
+
+/* line 9, ../../.sass/components/_PWAlternate.scss */
+td {
+  width: 100%;
+}

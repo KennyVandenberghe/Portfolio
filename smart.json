@@ -1,0 +1,10 @@
+{
+  "packages": {
+    "iron-router": {},
+    "handlebar-helpers": {},
+    "npm": {},
+    "spin": {},
+    "zurb-foundation": {},
+    "collection-behaviours": {}
+  }
+}

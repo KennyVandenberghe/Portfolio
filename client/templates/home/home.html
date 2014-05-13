@@ -1,0 +1,17 @@
+<template name="home">
+<table>
+ {{#each posts}}
+	<tr>
+		<div class="container alternate">
+			<td><p class="title">{{this.title}}</p>
+				{{#markdown}}{{this.content}}{{/markdown}}
+			<div>{{this.createdAt}}</div>
+			</td>
+		</div>
+	</tr>
+	{{/each}}
+</table>
+<div class="centerButton">
+ <a href="/post" class="button">New blogpost</a>
+</div>
+</template>

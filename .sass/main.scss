@@ -1,0 +1,15 @@
+@import "compass/support"; // Compass Browser Support Config
+@import "compass/utilities";
+@import "compass/css3";         // om zeker te zijn dat de font-files helper wordt geladen
+@import "compass/css3/box-sizing";
+@import "compass/css3/hyphenation"; // Cfr http://compass-style.org/reference/compass/css3/hyphenation/
+
+@import "_configurables";
+
+@import "components/_PWHeader";
+@import "components/_PWContainer";
+@import "components/_PWMenu";
+@import "components/_PWButtons";
+@import "components/_PWTitles";
+@import "components/_PWLines";
+@import "components/_PWAlternate";

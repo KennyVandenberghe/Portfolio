@@ -1,0 +1,87 @@
+tasks:
+	registration:
+    description: "Register a new account"
+    pre:
+      notloggedin:
+        def: you are not loggedin
+        task: logout
+      noaccount:
+        def: you have no account
+    post:
+      - you have an account
+      - you are loggedin
+    actions:
+      - Open the website in your browser
+      - Make sure you are not loggedin. A login screen should appear. If not, logout.
+      - Switch to registration form. Hit the 'create account' button
+      - Fill in all fields of the form
+      - click on the 'create account' button
+  logout:
+    description: "Logout"
+    pre:
+      loggedin:
+        def: you are loggedin
+        task: login
+    post:
+      - you are not loggedin
+    actions:
+      - click on the the menu-icon
+      - click on the 'logout' button
+  login:
+    description: "Login"
+    pre:
+      notloggedin:
+        def: you are not loggedin
+        task: logout
+      account:
+        def: you have an account
+        task: registration
+    post:
+      - you are loggedin
+    actions:
+      - Open the website in your browser
+      - login-form should appear, if not logout
+      - enter username and password
+      - click the 'sign in' button
+  retrievePassword:
+    description: "Retrieve login password in case you lost it"
+    pre:
+      registered:
+        def: you have an account
+        task: registration
+    post:
+      - new password is set
+    actions:
+      - Open the website in your browser
+      - click on "sign in"
+      - login-form should appear, if not logout
+      - click the 'forgot password' button
+      - enter your email address
+      - click the 'send reset instructions' button
+      - click the link in your received email
+      - set a new password in the dialog box that appears
+	postBlogPost:
+		description: "post a blogpost"
+		pre: 
+			isAdmin: 
+				def: you are loggedin as admin
+				task: login as admin
+		post:
+			- blogpost is posted
+		actions: 
+			- Open the website in your browser
+			- click on "new blogpost"
+			- fill in the required fields and press "post"
+	addProject:
+		description: "add a project"
+		pre:
+			isAdmin: 
+				def: you are loggedin as admin
+				task: login as admin
+		post: 
+			- project is added
+		actions: 
+			- Open the website in your browser
+			- Go to the project page
+			- click on "add a project"
+			- fill in the required fields and press "add"
