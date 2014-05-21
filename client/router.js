@@ -1,7 +1,8 @@
 Router.configure({
 	layoutTemplate: 'layout',
-	loadingTemplate: 'loading'
+	loadingTemplate: 'loading',
 });
+Router.onBeforeAction('loading');
 
 IndexController = RouteController.extend({
 	rootPane: 'home'
