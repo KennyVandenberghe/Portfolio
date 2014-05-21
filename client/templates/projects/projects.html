@@ -19,11 +19,11 @@
 </template>
 
 <template name="projects">
-<div class="row" style="margin-left: 5%;">
+<div class="container" style="text-align: center;">
 	{{#each projects}}
-		<a style="color: black;" href="/projects/{{this._id}}"><div style="margin: 15px 30px 15px 0; box-shadow: 3px 3px 3px 3px #ccc; width: 260px;
-		height: 230px; background-color: #f7f6f0; float: left;">
-			<div style="font-weight: bold; font-size: 18px; line-height: 27px; max-height: 54px; word-wrap: break-word; white-space: normal; overflow: hidden; margin:10px;">
+		<a style="color: black; text-align: left" href="/projects/{{this._id}}"><div style="display: inline-block; margin: 15px 30px 15px 0; box-shadow: 3px 3px 3px 3px #ccc; width: 260px;
+		height: 230px; background-color: #f7f6f0;">
+			<div style="font-weight: bold; font-size: 18px; line-height: 27px; max-height: 54px; margin:10px;">
 				{{this.title}}
 				<div>
 				<a href="#" class="button alert tiny delete-project">Delete</a>
@@ -40,3 +40,4 @@
  		<a href="/projects/add" class="button">New project</a>
 	</div>
 </template>
+
