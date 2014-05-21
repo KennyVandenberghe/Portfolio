@@ -1,0 +1,24 @@
+.text-color{
+	color: #000000;
+	text-align: left;
+}
+.project-position{
+	display: inline-block;
+	margin: 15px 30px 15px 0;
+	box-shadow: 3px 3px 3px 3px #cccccc;
+	width: 260px;
+	height: 230px;
+	background-color: #f7f6f0;
+}
+.project-title{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 27px;
+	max-height: 54px;
+	margin: 10px;
+}
+.project-summary{
+	font-size: 14px;
+	line-height: 18px;
+	margin: 10px;
+}
