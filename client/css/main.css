@@ -134,9 +134,10 @@ td {
   width: 260px;
   height: 230px;
   background-color: #f7f6f0;
+  vertical-align: top;
 }
 
-/* line 13, ../../.sass/components/_PWProjects.scss */
+/* line 14, ../../.sass/components/_PWProjects.scss */
 .project-title {
   font-weight: bold;
   font-size: 18px;
@@ -145,9 +146,22 @@ td {
   margin: 10px;
 }
 
-/* line 20, ../../.sass/components/_PWProjects.scss */
+/* line 21, ../../.sass/components/_PWProjects.scss */
 .project-summary {
   font-size: 14px;
   line-height: 18px;
   margin: 10px;
+}
+
+/* line 31, ../../.sass/components/_PWProjects.scss */
+.hover-label {
+  background-color: black;
+  margin-top: 123px;
+  height: 33px;
+  opacity: 0.5;
+}
+
+/* line 37, ../../.sass/components/_PWProjects.scss */
+.button-invisible {
+  visibility: hidden;
 }

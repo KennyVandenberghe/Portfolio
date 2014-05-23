@@ -9,6 +9,7 @@
 	width: 260px;
 	height: 230px;
 	background-color: #f7f6f0;
+	vertical-align: top;
 }
 .project-title{
 	font-weight: bold;
@@ -21,4 +22,18 @@
 	font-size: 14px;
 	line-height: 18px;
 	margin: 10px;
+}
+// .text-color:hover{
+// 	.hover-buttons{
+
+// 	}	
+// }
+.hover-label{
+	background-color: black;
+	margin-top: 123px; 
+	height: 33px;
+	opacity: 0.5;
+}	
+.button-invisible{
+	visibility: hidden;
 }

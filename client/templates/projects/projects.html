@@ -21,17 +21,19 @@
 <template name="projects">
 	<div class="container" style="text-align: center;">
 		{{#each projects}}
-			<a class="text-color" href="/projects/{{this._id}}">
+			<a class="appear text-color" id="{{this._id}}" href="/projects/{{this._id}}">
 				<div class="project-position">
 					<div class="project-title">
 						{{this.title}}
-							<div>
-								<a href="#" class="button alert tiny delete-project">Delete</a>
-							</div>
 					</div>
 					<p></p>
 					<div class="project-summary">
 						{{this.summary}}
+					</div>
+					<div>
+						<div id="{{this._id}}label">
+								<a href="#" id="{{this._id}}target" class="button-invisible">Delete</a>
+							</div>
 					</div>
 				</div>
 			</a>
