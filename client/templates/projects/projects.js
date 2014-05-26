@@ -11,18 +11,24 @@ Template.projects.events({
         PW.Projects.remove(this._id);
     },
     'mouseenter .appear': function(e){
-		var targ = "#" + e.currentTarget.id + "target";
+		var target = "#" + e.currentTarget.id + "target";
+        var targ = "#" + e.currentTarget.id + "targ";
 		var label = "#" + e.currentTarget.id +"label";
     $(e.currentTarget).addClass('hover-buttons');
-    $(label).addClass('hover-label').toggle("animate");
-    $(targ).addClass('button alert tiny delete-project');
+    $(label).addClass('hover-label');
+    $(target).addClass('button alert tiny delete-project');
+    $(targ).addClass('button success tiny edit_project');
+    $(target).removeClass('button-invisible');
     $(targ).removeClass('button-invisible');
     
     },
     'mouseleave .appear': function(e){
-    var targ = "#" + e.currentTarget.id + "target";
+    var target = "#" + e.currentTarget.id + "target";
+    var targ = "#" + e.currentTarget.id + "targ";
     var label = "#" + e.currentTarget.id +"label";	
-    $(targ).removeClass('button alert tiny delete-project');
+    $(target).removeClass('button alert tiny delete-project');
+    $(targ).removeClass('button success tiny edit_project');
+    $(target).addClass('button-invisible');
     $(targ).addClass('button-invisible');
     $(label).removeClass('hover-label');
     }

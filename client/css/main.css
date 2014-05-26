@@ -165,3 +165,8 @@ td {
 .button-invisible {
   visibility: hidden;
 }
+
+/* line 40, ../../.sass/components/_PWProjects.scss */
+.button-margin {
+  margin-left: -5px;
+}
