@@ -6,9 +6,12 @@ Template.projects.helpers({
 });
 
 Template.projects.events({
-  'click .delete-project': function() {
-  	if(confirm("Are u sure you want to delete this project?"))
-        PW.Projects.remove(this._id);
+    'click .delete-project': function() {
+    	if(confirm("Are u sure you want to delete this project?"))
+           PW.Projects.remove(this._id);
+    },
+    'click .edit_project': function(){
+        PW.Projects.findOne(this._id);
     },
     'mouseenter .appear': function(e){
 		var target = "#" + e.currentTarget.id + "target";

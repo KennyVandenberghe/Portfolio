@@ -19,6 +19,9 @@ ProjectPageController = RouteController.extend({
 ProjectAddController = RouteController.extend({
 	rootPane: 'projectadd'
 });
+ProjectEditController = RouteController.extend({
+	rootPane: 'projectedit'
+});
 SchoolDetailsController = RouteController.extend({
 	rootPane: 'schooldetails'
 });
@@ -44,6 +47,11 @@ Router.map(function(){
 	this.route('projectAdd', {
 		path: '/projects/add',
 		controller: 'ProjectAddController'
+	});
+	this.route('projectEdit', {
+		path: '/projects/:_id/edit',
+		data: function() {return PW.Projects.findOne(this.params._id);},
+		controller: 'ProjectEditController'
 	});
 	this.route('projectPage', {
 		path: '/projects/:_id',
