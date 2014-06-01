@@ -22,26 +22,28 @@
 	<div class="container" style="text-align: center;">
 		{{#each projects}}
 			<a class="appear text-color" id="{{this._id}}" href="/projects/{{this._id}}">
-				<div class="project-position">
+				<div class="project-position" style="position:relative;overflow:hidden;">
 					<div class="project-title">
 						{{this.title}}
 					</div>
 					<p></p>
 					<div class="project-summary">
-						{{this.summary}}
+						{{#markdown}}{{this.summary}}{{/markdown}}
 					</div>
+					
 					<div>
-						<div id="{{this._id}}label">
+						<div id="{{this._id}}label" style="position: absolute; bottom: 0;">
 							<a href="/projects/{{this._id}}/edit" id="{{this._id}}targ" class="button-invisible">Edit</a>
 							<a href="#" id="{{this._id}}target" class="button-invisible button-margin">Delete</a>
 						</div>
 					</div>
+					
 				</div>
 			</a>
 		{{/each}}
 	</div>
 	<div class="centerButton">
-		<a href="/projects/add" class="button">New project</a>
+		<a href="/projects/add" class="button success">New project</a>
 	</div>
 </template>
 

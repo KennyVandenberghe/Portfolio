@@ -19,9 +19,10 @@
 	margin: 10px;
 }
 .project-summary{
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 18px;
 	margin: 10px;
+	overflow: hidden;
 }
 // .text-color:hover{
 // 	.hover-buttons{
@@ -29,11 +30,13 @@
 // 	}	
 // }
 .hover-label{
-	background-color: black;
-	margin-top: 123px; 
+	width: 260px;
 	height: 33px;
-	opacity: 0.5;
+	position: absolute;
+	background-color: #666;
+	
 }	
+
 .button-invisible{
 	visibility: hidden;
 }

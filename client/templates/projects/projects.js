@@ -20,7 +20,7 @@ Template.projects.events({
     $(e.currentTarget).addClass('hover-buttons');
     $(label).addClass('hover-label');
     $(target).addClass('button alert tiny delete-project');
-    $(targ).addClass('button success tiny edit_project');
+    $(targ).addClass('button tiny edit_project');
     $(target).removeClass('button-invisible');
     $(targ).removeClass('button-invisible');
     
@@ -30,7 +30,7 @@ Template.projects.events({
     var targ = "#" + e.currentTarget.id + "targ";
     var label = "#" + e.currentTarget.id +"label";	
     $(target).removeClass('button alert tiny delete-project');
-    $(targ).removeClass('button success tiny edit_project');
+    $(targ).removeClass('button tiny edit_project');
     $(target).addClass('button-invisible');
     $(targ).addClass('button-invisible');
     $(label).removeClass('hover-label');

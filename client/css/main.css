@@ -148,25 +148,26 @@ td {
 
 /* line 21, ../../.sass/components/_PWProjects.scss */
 .project-summary {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   margin: 10px;
+  overflow: hidden;
 }
 
-/* line 31, ../../.sass/components/_PWProjects.scss */
+/* line 32, ../../.sass/components/_PWProjects.scss */
 .hover-label {
-  background-color: black;
-  margin-top: 123px;
+  width: 260px;
   height: 33px;
-  opacity: 0.5;
+  position: absolute;
+  background-color: #666;
 }
 
-/* line 37, ../../.sass/components/_PWProjects.scss */
+/* line 40, ../../.sass/components/_PWProjects.scss */
 .button-invisible {
   visibility: hidden;
 }
 
-/* line 40, ../../.sass/components/_PWProjects.scss */
+/* line 43, ../../.sass/components/_PWProjects.scss */
 .button-margin {
   margin-left: -5px;
 }
