@@ -10,20 +10,15 @@
   </div>
   <div class="row">
     <div class="large-12 columns">
-      <label>Korte inhoud
-        <textarea class="projectSummary" placeholder="Inhoud" value="{{content}}"></textarea>
+      <label>Inhoud
+        <textarea class="projectSummary" rows="10" placeholder="Inhoud">{{summary}}</textarea>
       </label>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-12 columns">
-      <label>Inhoud</label>
     </div>
   </div>
 </form>
 {{/with}}
 <div class="centerButton">
- 	<a href="/projects" class="editProject button">Edit project</a>
+ 	<a href="/projects" class="editProject button success">Edit project</a>
  </div>
 
 <form id="upload" action="/upload" method="POST" enctype="multipart/form-data"> 

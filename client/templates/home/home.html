@@ -2,8 +2,8 @@
 <table>
  {{#each posts}}
 	<tr>
-		<div class="container alternate">
-			<td><p class="title">{{this.title}}</p>
+		<div class="container alternate" style="position: relative;">
+			<td><p class="title">{{this.title}}<div style="position: absolute; right: 0; top: 10px;"><a href="/post/{{this._id}}" class="button tiny">Edit</a><a href="#" class="delete-post button alert tiny">Delete</a></div></p>
 				{{#markdown}}{{this.content}}{{/markdown}}
 			<div>{{this.createdAt}}</div>
 			</td>

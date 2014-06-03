@@ -8,7 +8,7 @@
 	box-shadow: 3px 3px 3px 3px #cccccc;
 	width: 260px;
 	height: 230px;
-	background-color: #f7f6f0;
+	background-color: rgb(247,247,247); //#f7f6f0
 	vertical-align: top;
 }
 .project-title{
@@ -33,7 +33,7 @@
 	width: 260px;
 	height: 33px;
 	position: absolute;
-	background-color: #666;
+	background-color: #333;
 	
 }	
 
@@ -42,4 +42,9 @@
 }
 .button-margin{
 	margin-left: -5px;
+}
+
+.hover-post-it:hover{
+	box-shadow: 0 0 5px 5px #cccccc;
+	color: #000000;
 }

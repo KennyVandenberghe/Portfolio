@@ -133,7 +133,7 @@ td {
   box-shadow: 3px 3px 3px 3px #cccccc;
   width: 260px;
   height: 230px;
-  background-color: #f7f6f0;
+  background-color: #f7f7f7;
   vertical-align: top;
 }
 
@@ -159,7 +159,7 @@ td {
   width: 260px;
   height: 33px;
   position: absolute;
-  background-color: #666;
+  background-color: #333;
 }
 
 /* line 40, ../../.sass/components/_PWProjects.scss */
@@ -170,4 +170,10 @@ td {
 /* line 43, ../../.sass/components/_PWProjects.scss */
 .button-margin {
   margin-left: -5px;
+}
+
+/* line 47, ../../.sass/components/_PWProjects.scss */
+.hover-post-it:hover {
+  box-shadow: 0 0 5px 5px #cccccc;
+  color: #000000;
 }

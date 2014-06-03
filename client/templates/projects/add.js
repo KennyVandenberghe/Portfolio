@@ -2,7 +2,6 @@ var insert_project = function() {
 	PW.Projects.insert({
 		title: $('.projectTitle').val(),
 		summary: $('.projectSummary').val(),
-    content: "",
 		createdAt: new Date().getTime()
 	});
 	$('.projectTitle').val('');

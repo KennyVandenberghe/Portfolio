@@ -10,6 +10,9 @@ IndexController = RouteController.extend({
 HomeAddPostController = RouteController.extend({
 	rootPane: 'homeaddpost'
 });
+HomeEditPostController = RouteController.extend({
+	rootPane: 'homeeditpost'
+});
 ProjectController = RouteController.extend({
 	rootPane: 'projects'
 });
@@ -21,6 +24,9 @@ ProjectAddController = RouteController.extend({
 });
 ProjectEditController = RouteController.extend({
 	rootPane: 'projectedit'
+});
+ProjectEditProjectPostController = RouteController.extend({
+	rootPane: 'projecteditprojectpost'
 });
 SchoolDetailsController = RouteController.extend({
 	rootPane: 'schooldetails'
@@ -40,6 +46,11 @@ Router.map(function(){
 		path: '/post',
 		controller: 'HomeAddPostController'
 	});
+	this.route('homeEditPost', {
+		path: '/post/:_id',
+		data: function() {return PW.BlogPosts.findOne(this.params._id);},
+		controller: 'HomeEditPostController'
+	});
 	this.route('projects', {
 		path: '/projects',
 		controller: 'ProjectController'
@@ -52,6 +63,11 @@ Router.map(function(){
 		path: '/projects/:_id/edit',
 		data: function() {return PW.Projects.findOne(this.params._id);},
 		controller: 'ProjectEditController'
+	});
+	this.route('projectEditProjectPost', {
+		path: '/projects/:projectId/:_id',
+		data: function(){return PW.ProjectPosts.findOne(this.params._id);},
+		controller: 'ProjectEditProjectPostController'
 	});
 	this.route('projectPage', {
 		path: '/projects/:_id',
