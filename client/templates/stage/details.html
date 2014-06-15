@@ -1,3 +1,8 @@
 <template name="stageDetails">
 	<img src="rni.png" alt="">
+	<div class="container-over-mij">
+	{{#with Stage}}
+		{{#markdown}}{{this.content}}{{/markdown}}
+	{{/with}}
+</div>
 </template>
